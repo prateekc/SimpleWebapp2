@@ -1,0 +1,54 @@
+.card{
+	border:2px solid ;
+	border-radius: 10px;
+	/* background: light color gradient*/
+	width: 300px;
+	display: inline-block;
+	padding-bottom:10px;
+	font-size: 12px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+background: -moz-linear-gradient(-45deg,  rgba(195,195,195,1) 0%, rgba(227,227,227,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(195,195,195,1)), color-stop(100%,rgba(227,227,227,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  rgba(195,195,195,1) 0%,rgba(227,227,227,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  rgba(195,195,195,1) 0%,rgba(227,227,227,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  rgba(195,195,195,1) 0%,rgba(227,227,227,0) 100%); /* IE10+ */
+background: linear-gradient(135deg,  rgba(195,195,195,1) 0%,rgba(227,227,227,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3c3c3', endColorstr='#00e3e3e3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.card .cardRows{
+	display: block;
+	//border:1px solid black;
+	height: 120px;
+	width: 89%;
+	margin-left:5%;
+	
+}
+.clear{
+	clear:both;
+}
+.card .markers{
+	//border:2px solid black;
+	width:50%;
+	height:20px;
+	float:right;
+	margin-bottom: 0px;
+	display: none;
+}
+
+.card p{
+	margin:3px;
+}
+.largeMarkers{
+	float:right;
+	position: relative;
+	right: 25px;
+	top: 20px;
+}
+
+.clear{
+	clear: both;
+}

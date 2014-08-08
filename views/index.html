@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+html.
+
+<head>
+	<title>OnDemand Knowledge Transfer</title>
+	
+	<link type="text/css" rel="stylesheet" href="css/header.css">
+	<link type="text/css" rel="stylesheet" href="css/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="css/jquery-ui.structure.min.css">
+	<link type="text/css" rel="stylesheet" href="css/jquery-ui.theme.min.css">
+	<link type="text/css" rel="stylesheet" href="css/main.css">
+	<link type="text/css" rel="stylesheet" href="css/cards.css">
+	<link type="text/css" rel="stylesheet" href="css/profile.css">
+	<link type="text/css" rel="stylesheet" href="css/themes/toggles-dark.css">
+	<link type="text/css" rel="stylesheet" href="css/toggles.css">
+	<link type="text/css" rel="stylesheet" href="css/jquery.toastmessage.css">
+	<link type="text/css" rel="stylesheet" href="css/barrating.css">
+
+
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/toggles.min.js"></script>
+	<script src="js/jquery.toastmessage.js"></script>
+	<script src="js/jquery.barrating.js"></script>
+
+</head>
+<body>
+	<header id="header" class="">
+		<a href="#menu" class="box-shadow-menu" id="menuButton" onclick="showMenu()"></a>
+		<span class="logo">OnDemand KT</span>	
+		<span class="loggedIn"> Prateek Chawla<span>(chapr005)</span></span>
+	</header>
+	<!-- menu-->
+	<div id='menu'>
+	<table id="menuHead">
+	<tr><th class="selctedMenuTab">Search</th><th>Profile</th></tr>
+	</table>
+ 	<nav id="searchTabMenuOpt" class="subMenu">
+        <ul>
+            <!--<li><a href="">Show/Hide Tags <input type="checkBox" id="showHideTags" name="" value=""></a></li> -->
+            <li><a>Playlists</a>
+            	<ul>
+            	<li style="width:200px;"><a href="#" onclick="newGuyDemo()">My First Release</a></li>
+            	<li style="width:200px;"><a href="#" onclick="backToSearchDemo()">Back To Search</a></li>
+            	</ul>
+            </li>
+            <li><a href="#" onclick="$('#editOrUpdateCard').show();">Add New Card</a></li>
+            <li><a href="#" onclick="$('#editOrUpdateCard').show();">Ask a Question</a></li>
+        </ul>
+    </nav>
+    <nav id="profileTabMenuOpt" class="subMenu">
+        <ul>
+            <li><a href="">Somthing</a></li>
+        </ul>
+    </nav>
+        <nav id="aboutUsButt">
+        <ul>
+            <li><a href="#" onclick="showAboutApp()">About Application</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+
+<div id="searchDiv">
+	<div style="" id="searchAddHolder">Add Tag: <input id="tagAddInput" value="lolo"/><button type="button" id="addNewTagButt" onclick="addnewTag()">+</button></div>
+	<div id="tagHolder"></div>
+</div>
+	<div id="cardsHolderDiv">
+	</div>
+	<div id="largeCard" class="largeHiddenElems">
+	<div class="largeMarkers">
+	<select> <option>Fav</option><option> Release </option><option>Bug</option> Rel</select><button type="button" class="addButt" onclick="" style='font-size:110%;'>+</button>
+	</div>
+	
+	<article>
+		<h1 class="lrgName">ExtremeCoder</h1>
+		<p class='lrdTags'>Tags: Production,Deploy</p>
+		<p class="largeDesc"><span style='font-size:115%'>Prod Server deploy issue: </span> This is a sample solutionThis is a sample solutionThis is a sample solutionThis is a sample solutionThis is a sample solutionThis is a sample solutionThis is a sample solutionThis is a sample solutionThis is a sample solutionThis is a sample solutionThis is a sample solutionThis is a sample solutionThis is a sample solution</p>
+		<div class="input select rating-a">
+
+			<select id="example-a" name="rating" style="position:absolute;bottom:5px;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5" selected="selected">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+         </div>
+	</article>
+		
+
+
+
+
+
+
+
+
+
+
+	</div>
+	<div id="editOrUpdateCard" class="largeHiddenElems">
+	Tags <input id="editTags">
+	Title <input id="editTitle">
+	Information <input id="editDesc">
+	<div id="buttonHolderDiv">
+		<button type="button" onclick="addNewCard()">Add</button>
+		<button type="button" onclick="cancelCardAdd()">Cancel</button>
+	</div>	
+	</div>
+	<div id="aboutApp" class="largeHiddenElems">
+	 <article>
+	 <h1>About the Application</h1>
+	<p>
+		<i>OnDeman Knowledge Transfer</i> is an application that intends to enable associates to better utilize their time by providing information in a very usable manner and using enhanced search methods to avoid 'Reinventing the Wheel Situation'.
+	</p>
+	<p>
+		It is basically Smart Visibility and Smart Search in regards to data.
+	</p>
+ 	</article>
+	</div>
+	<script src="js/main.js"></script>
+	<script src="js/profile.js"></script>
+	<script src="js/cards.js"></script>
+	
+</body>
